@@ -1,0 +1,61 @@
+# Ukrainian translations for PACKAGE package.
+# Copyright (C) 2020 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-26 20:35-0400\n"
+"PO-Revision-Date: 2020-05-24 16:03-0400\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/main.c:186
+msgid ""
+"If you need help, check out the Online Manual and the Peppermint Forums.\n"
+"\n"
+"Thank you for joining us!"
+msgstr ""
+
+#: src/main.c:142
+msgid ""
+"Part of the Peppermint magic is ICE SSB (Single Site Browsers).\n"
+"\n"
+"Set up your favorite web sites in ICE Single Site Browser instances and "
+"access them from the menu just like local applications!"
+msgstr ""
+
+#: src/main.c:129
+msgid ""
+"The new Peppermint Hub makes it easier to access all your system settings in "
+"a tidy and familiar location."
+msgstr ""
+
+#: src/main.c:119
+msgid ""
+"Welcome to Peppermint OS! \n"
+" \n"
+"Peppermint is based on a Long Term Support (LTS) release schedule and "
+"provides a minimal set of preinstalled applications to get you started.  \n"
+"\n"
+"Peppermint gives the user the choice to shape their ideal linux operating "
+"system!"
+msgstr ""
+
+#: src/main.c:156
+msgid ""
+"Yes, you can install traditional local applications.\n"
+"\n"
+"We offer the traditional Synaptic Package Manager as well as the Snapcraft "
+"and flathub ICE-SSB instances to help you get the software you need!  \n"
+"\n"
+"Make your own software choices!"
+msgstr ""

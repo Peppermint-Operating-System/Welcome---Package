@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Peppermint Welcome
+Comment=Welcome 
+Exec=peppermint-welcome
+Icon=peppermint-welcome
+Type=Application
+Encoding=UTF-8
+Categories=Application;Settings

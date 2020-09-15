@@ -1,0 +1,12 @@
+Source: peppermint-welcome
+Section: admin
+Priority: optional
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Build-Depends:  debhelper (>=7.0.50~)
+Standards-Version: 3.9.5
+
+Package: peppermint-welcome
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Peppermint Welcome
+ Welcome screen for Peppermint Linux
