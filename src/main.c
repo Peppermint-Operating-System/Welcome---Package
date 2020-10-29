@@ -14,13 +14,13 @@ GtkWidget *g_label_main_text;
 GtkWidget *g_button_app_one;
 GtkWidget *g_button_app_two;
 GtkWidget *g_button_app_three;
+GtkWidget *g_button_app_four;
 GtkWidget *g_button_back;
 GtkWidget *g_button_next;
 GtkWidget *g_button_close;
 GtkWidget *g_image_screenshot;
 int page_index;
 void page_switch();
-
 
 int main(int argc, char *argv[])
 {
@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
     gtk_init(&argc, &argv);
 
     builder = gtk_builder_new_from_file("/usr/share/peppermint-welcome/glade/window_main.glade");
+    //builder = gtk_builder_new_from_file("/home/dolphin/development/Welcome---Package/assets/glade/window_main.glade");
 
     window = GTK_WIDGET(gtk_builder_get_object(builder, "window_main"));
     gtk_builder_connect_signals(builder, NULL);
@@ -45,6 +46,7 @@ int main(int argc, char *argv[])
     g_button_app_one = GTK_WIDGET(gtk_builder_get_object(builder, "button_app_one"));
     g_button_app_two = GTK_WIDGET(gtk_builder_get_object(builder, "button_app_two"));
     g_button_app_three = GTK_WIDGET(gtk_builder_get_object(builder, "button_app_three"));
+    g_button_app_four = GTK_WIDGET(gtk_builder_get_object(builder, "button_app_four"));
     g_button_back = GTK_WIDGET(gtk_builder_get_object(builder, "button_back"));
     g_button_next = GTK_WIDGET(gtk_builder_get_object(builder, "button_next"));
     g_button_close = GTK_WIDGET(gtk_builder_get_object(builder, "button_close"));
@@ -106,6 +108,7 @@ void page_switch()
     GtkWidget *image;
     GtkWidget *image2;
     GtkWidget *image3;
+    GtkWidget *image4;
     
     switch(page_index)
     {
@@ -114,6 +117,7 @@ void page_switch()
         gtk_widget_hide(g_button_app_one);
         gtk_widget_hide(g_button_app_two);
         gtk_widget_hide(g_button_app_three);
+        gtk_widget_hide(g_button_app_four);
         gtk_widget_hide(g_button_close);
         gtk_image_set_from_file(GTK_IMAGE(g_image_screenshot), "/usr/share/peppermint-welcome/glade/images/Peppermint.png");
         gtk_label_set_text(GTK_LABEL(g_label_main_text), _("Welcome to Peppermint OS! \n \nPeppermint is based on a Long Term Support (LTS) release schedule and provides a minimal set of preinstalled applications to get you started.  \n\nPeppermint gives the user the choice to shape their ideal linux operating system!"));
@@ -123,6 +127,7 @@ void page_switch()
         gtk_widget_hide(g_button_app_one);
         gtk_widget_show(g_button_app_two);
         gtk_widget_hide(g_button_app_three);
+        gtk_widget_hide(g_button_app_four);
         gtk_widget_show(g_button_back);
         gtk_widget_hide(g_button_close);
         gtk_image_set_from_file(GTK_IMAGE(g_image_screenshot), "/usr/share/peppermint-welcome/glade/images/peppermint-hub-screenshot.png");
@@ -137,6 +142,7 @@ void page_switch()
         gtk_widget_hide(g_button_app_one);
         gtk_widget_show(g_button_app_two);
         gtk_widget_hide(g_button_app_three);
+        gtk_widget_hide(g_button_app_four);
         gtk_widget_hide(g_button_close);
         gtk_image_set_from_file(GTK_IMAGE(g_image_screenshot), "/usr/share/peppermint-welcome/glade/images/ice-screenshot.png");
         gtk_label_set_text(GTK_LABEL(g_label_main_text), _("Part of the Peppermint magic is ICE SSB (Single Site Browsers).\n\nSet up your favorite web sites in ICE Single Site Browser instances and access them from the menu just like local applications!"));
@@ -150,6 +156,7 @@ void page_switch()
         gtk_widget_show(g_button_app_one);
         gtk_widget_show(g_button_app_two);
         gtk_widget_show(g_button_app_three);
+        gtk_widget_show(g_button_app_four);
         gtk_widget_show(g_button_next);
         gtk_widget_hide(g_button_close);
         gtk_image_set_from_file(GTK_IMAGE(g_image_screenshot), "/usr/share/peppermint-welcome/glade/images/software-center-screenshot.png");
@@ -157,6 +164,7 @@ void page_switch()
         image = gtk_image_new_from_icon_name ("synaptic", 32);
         image2= gtk_image_new_from_icon_name("softwarecenter-ubuntu", 32);
         image3= gtk_image_new_from_icon_name("softwarecenter-ubuntu", 32);
+        image4= gtk_image_new_from_icon_name("softwarecenter-ubuntu", 32);
         gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_one), TRUE);
         gtk_button_set_image (GTK_BUTTON (g_button_app_one), image);
         gtk_button_set_label (GTK_BUTTON (g_button_app_one), "Synaptic");
@@ -166,6 +174,9 @@ void page_switch()
         gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_two), TRUE);
         gtk_button_set_image (GTK_BUTTON (g_button_app_two), image3);
         gtk_button_set_label (GTK_BUTTON (g_button_app_two), "flathub");
+        gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_four), TRUE);
+        gtk_button_set_image (GTK_BUTTON (g_button_app_four), image4);
+        gtk_button_set_label (GTK_BUTTON (g_button_app_four), "appimages");
         break;
         
         case 5:
@@ -174,6 +185,7 @@ void page_switch()
         gtk_widget_show(g_button_app_one);
         gtk_widget_hide(g_button_app_two);
         gtk_widget_show(g_button_app_three);
+        gtk_widget_hide(g_button_app_four);
         gtk_image_set_from_file(GTK_IMAGE(g_image_screenshot), "/usr/share/peppermint-welcome/glade/images/online-guide-screenshot.png");
         image = gtk_image_new_from_file ("/usr/share/peppermint-welcome/glade/images/Peppermint-small.png");
         gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_one), TRUE);
@@ -264,6 +276,32 @@ void on_button_app_three_clicked()
         
         case 5:
         system("ice-firefox https://forum.peppermintos.com/ &");
+        break;
+    }
+}
+
+void on_button_app_four_clicked()
+{
+    switch(page_index)
+    {
+        case 1:
+        ;
+        break;
+        
+        case 2:
+        ;
+        break;
+        
+        case 3:
+        ;        
+        break;
+        
+        case 4:
+        system("ice-firefox https://appimage.github.io/apps/ &");
+        break;
+        
+        case 5:
+        ;
         break;
     }
 }
