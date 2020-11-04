@@ -2,22 +2,22 @@ Format: 1.0
 Source: peppermint-welcome
 Binary: peppermint-welcome
 Architecture: amd64 source
-Version: 20.10.02
+Version: 20.11.01
 Checksums-Md5:
- a11c1ee002d85949c96c1bf80a7f8129 597 peppermint-welcome_20.10.02.dsc
- 1b3ab0e317f58a48791cc022cc2a87d0 8808 peppermint-welcome-dbgsym_20.10.02_amd64.deb
- f7f074740a051aa17dbd368b5160124b 304092 peppermint-welcome_20.10.02_amd64.deb
+ b01a9fbc446e41b06dd2d433209ccc1b 600 peppermint-welcome_20.11.01.dsc
+ 2423c6eefea8b8b534e065b295455dd9 8832 peppermint-welcome-dbgsym_20.11.01_amd64.deb
+ ae15592f61a182fcd842f4085088d382 304352 peppermint-welcome_20.11.01_amd64.deb
 Checksums-Sha1:
- c8eaf6e1b838fc7720ce591fba03accdd3f6e348 597 peppermint-welcome_20.10.02.dsc
- 43b7a350909071a21b691e91f61065fef3a4c500 8808 peppermint-welcome-dbgsym_20.10.02_amd64.deb
- 5486a79342f63d970346df053460828384ffd1ec 304092 peppermint-welcome_20.10.02_amd64.deb
+ 8364d884902012596b4682f1c40021f096659373 600 peppermint-welcome_20.11.01.dsc
+ 8fdeeb01f79954c473d2f9155f1144fb60734326 8832 peppermint-welcome-dbgsym_20.11.01_amd64.deb
+ cdb7a3cd605125ef8e6f04653644df21fe49f71c 304352 peppermint-welcome_20.11.01_amd64.deb
 Checksums-Sha256:
- b071148d28174b8ee048e60e491d0281a322feb4b4bcdcfabd124e40f8806e8f 597 peppermint-welcome_20.10.02.dsc
- 2a8a87b4f2767e58fc0910166cc027713fcde98828bf12da8d9f3a400d4b3c73 8808 peppermint-welcome-dbgsym_20.10.02_amd64.deb
- 2884cbc9b925293ad29f239ae0d17d1795f6bafaaf230549787dcc79099d817f 304092 peppermint-welcome_20.10.02_amd64.deb
+ 5cfa024bea20878c6ff5b60ebd6b25a5e9ece25da765dc6a9a061d92cea3b6d5 600 peppermint-welcome_20.11.01.dsc
+ 4fc152c087f23f0fd451950daf9c9e69c9ccc053aa2c024f2feb8f987ebd6f42 8832 peppermint-welcome-dbgsym_20.11.01_amd64.deb
+ 22907cfefecabca2bb67c1f220f925f6c5302178c267060c70d681cbdfab4da1 304352 peppermint-welcome_20.11.01_amd64.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Wed, 28 Oct 2020 21:39:51 -0400
+Build-Date: Tue, 03 Nov 2020 20:44:24 -0500
 Build-Tainted-By:
  merged-usr-via-symlinks
  usr-local-has-libraries
@@ -165,4 +165,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1603935388"
+ SOURCE_DATE_EPOCH="1604454162"
