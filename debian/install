@@ -2,6 +2,7 @@ peppermint-welcome                                                      usr/bin
 assets/*                                                                usr/share/peppermint-welcome
 icon/*                                                                  usr/share/pixmaps
 peppermint-welcome.desktop                                              usr/share/applications
+autostart/*																etc/skel/.config/autostart
 /mo/am/peppermint-welcome.mo                        usr/share/locale/am/LC_MESSAGES
 /mo/ar/peppermint-welcome.mo                        usr/share/locale/ar/LC_MESSAGES
 /mo/bg/peppermint-welcome.mo                        usr/share/locale/bg/LC_MESSAGES

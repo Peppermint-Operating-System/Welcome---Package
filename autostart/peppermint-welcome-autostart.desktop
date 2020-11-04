@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Peppermint Welcome
+Comment=Welcome 
+Exec=bash -c 'sleep 5 && peppermint-welcome'
+Terminal=false
+Icon=peppermint-welcome
+Type=Application
+Encoding=UTF-8
+Categories=Application;Settings
+NoDisplay=false

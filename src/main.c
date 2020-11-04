@@ -57,6 +57,7 @@ int main(int argc, char *argv[])
     page_index = 1;
     page_switch();
 
+	system("rm ~/.config/autostart/peppermint-welcome-autostart.desktop 2>/dev/null");
     gtk_widget_show(window);                
     gtk_main();
 
