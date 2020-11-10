@@ -1,3 +1,16 @@
+peppermint-welcome (20.11.01) mx; urgency=medium
+
+  * add autostart for first run and new user first login 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 03 Nov 2020 20:42:42 -0500
+
+peppermint-welcome (20.10.02) mx; urgency=medium
+
+  * update screenshots
+  * add appimages ice launcher 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 28 Oct 2020 21:36:28 -0400
+
 peppermint-welcome (20.07.01) bionic; urgency=medium
 
   * new text 
