@@ -1,7 +1,7 @@
  dpkg-buildpackage -us -uc -ui
 dpkg-buildpackage: info: source package peppermint-welcome
-dpkg-buildpackage: info: source version 20.11.01
-dpkg-buildpackage: info: source distribution mx
+dpkg-buildpackage: info: source version 20.12.01
+dpkg-buildpackage: info: source distribution bionic
 dpkg-buildpackage: info: source changed by Dolphin Oracle <dolphinoracle@gmail.com>
  dpkg-source --before-build .
 dpkg-buildpackage: info: host architecture amd64
@@ -15,8 +15,8 @@ make[1]: Leaving directory '/media/dataext/development/working/Welcome---Package
    dh_clean
  dpkg-source -b .
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building peppermint-welcome in peppermint-welcome_20.11.01.tar.xz
-dpkg-source: info: building peppermint-welcome in peppermint-welcome_20.11.01.dsc
+dpkg-source: info: building peppermint-welcome in peppermint-welcome_20.12.01.tar.xz
+dpkg-source: info: building peppermint-welcome in peppermint-welcome_20.12.01.dsc
  debian/rules build
 dh build 
    dh_update_autotools_config
@@ -88,25 +88,25 @@ dh binary
    dh_makeshlibs
    dh_shlibdeps
 dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libgdk-3.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libatk-1.0.so.0 (it uses none of the library's symbols)
 dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libcairo-gobject.so.2 (it uses none of the library's symbols)
 dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libpangocairo-1.0.so.0 (it uses none of the library's symbols)
 dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libcairo.so.2 (it uses none of the library's symbols)
-dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libgdk_pixbuf-2.0.so.0 (it uses none of the library's symbols)
-dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libglib-2.0.so.0 (it uses none of the library's symbols)
 dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libgio-2.0.so.0 (it uses none of the library's symbols)
-dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libatk-1.0.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libgdk_pixbuf-2.0.so.0 (it uses none of the library's symbols)
 dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libpango-1.0.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/peppermint-welcome/usr/bin/peppermint-welcome was not linked against libglib-2.0.so.0 (it uses none of the library's symbols)
    dh_installdeb
    dh_gencontrol
    dh_md5sums
    debian/rules override_dh_builddeb
 make[1]: Entering directory '/media/dataext/development/working/Welcome---Package/64'
 dh_builddeb -- -Z xz
-dpkg-deb: building package 'peppermint-welcome-dbgsym' in '../peppermint-welcome-dbgsym_20.11.01_amd64.deb'.
-dpkg-deb: building package 'peppermint-welcome' in '../peppermint-welcome_20.11.01_amd64.deb'.
+dpkg-deb: building package 'peppermint-welcome-dbgsym' in '../peppermint-welcome-dbgsym_20.12.01_amd64.deb'.
+dpkg-deb: building package 'peppermint-welcome' in '../peppermint-welcome_20.12.01_amd64.deb'.
 make[1]: Leaving directory '/media/dataext/development/working/Welcome---Package/64'
  dpkg-genbuildinfo
- dpkg-genchanges  >../peppermint-welcome_20.11.01_amd64.changes
+ dpkg-genchanges  >../peppermint-welcome_20.12.01_amd64.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build .
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)

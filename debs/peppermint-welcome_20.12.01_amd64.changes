@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 11 Dec 2020 23:15:52 -0500
+Source: peppermint-welcome
+Binary: peppermint-welcome peppermint-welcome-dbgsym
+Architecture: source amd64
+Version: 20.12.01
+Distribution: bionic
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ peppermint-welcome - Peppermint Welcome
+Changes:
+ peppermint-welcome (20.12.01) bionic; urgency=medium
+ .
+   * revise software page
+Checksums-Sha1:
+ 631b413966551b0c21e1f2ca577787771ebe5320 600 peppermint-welcome_20.12.01.dsc
+ 3f74c9dae937d23600f08f18abebd4232031ca61 1949692 peppermint-welcome_20.12.01.tar.xz
+ 1389c004eaf01ff504405913bfeb97aa83b01225 8804 peppermint-welcome-dbgsym_20.12.01_amd64.deb
+ 66d759ab4d948fc90f26edbb46f20ba3e82e5901 5057 peppermint-welcome_20.12.01_amd64.buildinfo
+ 1730a5f68408373ec65cb97d62ef1d209b6c73de 304300 peppermint-welcome_20.12.01_amd64.deb
+Checksums-Sha256:
+ d31aaa8f1a4dd9517c1ba27c76a95ea10cc7b94d31a85a45980b6b1b9e283896 600 peppermint-welcome_20.12.01.dsc
+ c16ac28145704293d0e00cd736ad62c8b06d322a8676909b4ac8358d126ba71e 1949692 peppermint-welcome_20.12.01.tar.xz
+ f9116519c4498c064a529c1c2fa35cc48420a2a660365f815ec7dec701c9dd48 8804 peppermint-welcome-dbgsym_20.12.01_amd64.deb
+ f8861c4c39d871e7c931ea398a094d9881994486495567d0ca9ba97087afbc5a 5057 peppermint-welcome_20.12.01_amd64.buildinfo
+ 74f221c4641fbe7196530e708b9fe5510a8a0d01b60ef388e822ab14587ba8a5 304300 peppermint-welcome_20.12.01_amd64.deb
+Files:
+ 73859f983a70217d4bde130e104497d0 600 admin optional peppermint-welcome_20.12.01.dsc
+ 498fa97a69419d96d83ed80f9c4bd83a 1949692 admin optional peppermint-welcome_20.12.01.tar.xz
+ 63149b96b087b8f2c56531eb0197b04a 8804 debug optional peppermint-welcome-dbgsym_20.12.01_amd64.deb
+ 1f69868b97e1ecbce24995e6a9fd2f38 5057 admin optional peppermint-welcome_20.12.01_amd64.buildinfo
+ 16940aa5a162899de0f8d380d565c47f 304300 admin optional peppermint-welcome_20.12.01_amd64.deb
