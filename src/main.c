@@ -109,7 +109,7 @@ void page_switch()
     GtkWidget *image;
     GtkWidget *image2;
     GtkWidget *image3;
-    GtkWidget *image4;
+    //GtkWidget *image4;
     
     switch(page_index)
     {
@@ -155,29 +155,31 @@ void page_switch()
         
         case 4:
         gtk_widget_show(g_button_app_one);
-        gtk_widget_show(g_button_app_two);
+        gtk_widget_hide(g_button_app_two);
         gtk_widget_show(g_button_app_three);
-        gtk_widget_show(g_button_app_four);
+        gtk_widget_hide(g_button_app_four);
         gtk_widget_show(g_button_next);
         gtk_widget_hide(g_button_close);
-        gtk_image_set_from_file(GTK_IMAGE(g_image_screenshot), "/usr/share/peppermint-welcome/glade/images/software-center-screenshot.png");
-        gtk_label_set_text(GTK_LABEL(g_label_main_text), _("Yes, you can install traditional local applications.\n\nWe offer the traditional Synaptic Package Manager as well as the Snapcraft and flathub ICE-SSB instances to help you get the software you need!  \n\nMake your own software choices!"));
+        gtk_image_set_from_file(GTK_IMAGE(g_image_screenshot), "/usr/share/peppermint-welcome/glade/images/Peppermint.png");
+        //gtk_image_set_from_file(GTK_IMAGE(g_image_screenshot), "/usr/share/peppermint-welcome/glade/images/software-center-screenshot.png");
+        gtk_label_set_text(GTK_LABEL(g_label_main_text), _("Yes, you can install traditional local applications.\n\nWe offer the traditional Synaptic Package Manager to help you get the software you need, as well as core and full package sets to get you started!  \n\nMake your own software choices!"));
         image = gtk_image_new_from_icon_name ("synaptic", 32);
-        image2= gtk_image_new_from_icon_name("softwarecenter-ubuntu", 32);
+        //image2= gtk_image_new_from_icon_name("softwarecenter-ubuntu", 32);
         image3= gtk_image_new_from_icon_name("softwarecenter-ubuntu", 32);
-        image4= gtk_image_new_from_icon_name("softwarecenter-ubuntu", 32);
+        //image4= gtk_image_new_from_icon_name("softwarecenter-ubuntu", 32);
         gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_one), TRUE);
         gtk_button_set_image (GTK_BUTTON (g_button_app_one), image);
         gtk_button_set_label (GTK_BUTTON (g_button_app_one), "Synaptic");
         gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_three), TRUE);
-        gtk_button_set_image (GTK_BUTTON (g_button_app_three), image2);
-        gtk_button_set_label (GTK_BUTTON (g_button_app_three), "Snapcraft");
-        gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_two), TRUE);
-        gtk_button_set_image (GTK_BUTTON (g_button_app_two), image3);
-        gtk_button_set_label (GTK_BUTTON (g_button_app_two), "flathub");
-        gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_four), TRUE);
-        gtk_button_set_image (GTK_BUTTON (g_button_app_four), image4);
-        gtk_button_set_label (GTK_BUTTON (g_button_app_four), "appimages");
+        gtk_button_set_image (GTK_BUTTON (g_button_app_three), image3);
+        gtk_button_set_label (GTK_BUTTON (g_button_app_three), "Package Sets");
+        //gtk_button_set_label (GTK_BUTTON (g_button_app_three), "Snapcraft");
+        //gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_two), TRUE);
+        //gtk_button_set_image (GTK_BUTTON (g_button_app_two), image2);
+        //gtk_button_set_label (GTK_BUTTON (g_button_app_two), "flathub");
+        //gtk_button_set_always_show_image (GTK_BUTTON (g_button_app_four), TRUE);
+        //gtk_button_set_image (GTK_BUTTON (g_button_app_four), image4);
+        //gtk_button_set_label (GTK_BUTTON (g_button_app_four), "appimages");
         break;
         
         case 5:
@@ -245,7 +247,7 @@ void on_button_app_two_clicked()
         break;
         
         case 4:
-        system("ice-firefox https://snapcraft.io/store &");
+        //system("ice-firefox https://flathub.org/home");
         ;
         break;
         
@@ -271,7 +273,8 @@ void on_button_app_three_clicked()
         break;
         
         case 4:
-        system("ice-firefox https://flathub.org/home");
+        //system("ice-firefox https://snapcraft.io/store &");
+        system("/usr/bin/packsetup.sh &");
         ;
         break;
         
@@ -298,7 +301,7 @@ void on_button_app_four_clicked()
         break;
         
         case 4:
-        system("ice-firefox https://appimage.github.io/apps/ &");
+        //system("ice-firefox https://appimage.github.io/apps/ &");
         break;
         
         case 5:
