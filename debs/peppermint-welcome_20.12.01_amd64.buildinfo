@@ -2,22 +2,22 @@ Format: 1.0
 Source: peppermint-welcome
 Binary: peppermint-welcome
 Architecture: amd64 source
-Version: 20.11.01
+Version: 20.12.01
 Checksums-Md5:
- b01a9fbc446e41b06dd2d433209ccc1b 600 peppermint-welcome_20.11.01.dsc
- 2423c6eefea8b8b534e065b295455dd9 8832 peppermint-welcome-dbgsym_20.11.01_amd64.deb
- ae15592f61a182fcd842f4085088d382 304352 peppermint-welcome_20.11.01_amd64.deb
+ 73859f983a70217d4bde130e104497d0 600 peppermint-welcome_20.12.01.dsc
+ 63149b96b087b8f2c56531eb0197b04a 8804 peppermint-welcome-dbgsym_20.12.01_amd64.deb
+ 16940aa5a162899de0f8d380d565c47f 304300 peppermint-welcome_20.12.01_amd64.deb
 Checksums-Sha1:
- 8364d884902012596b4682f1c40021f096659373 600 peppermint-welcome_20.11.01.dsc
- 8fdeeb01f79954c473d2f9155f1144fb60734326 8832 peppermint-welcome-dbgsym_20.11.01_amd64.deb
- cdb7a3cd605125ef8e6f04653644df21fe49f71c 304352 peppermint-welcome_20.11.01_amd64.deb
+ 631b413966551b0c21e1f2ca577787771ebe5320 600 peppermint-welcome_20.12.01.dsc
+ 1389c004eaf01ff504405913bfeb97aa83b01225 8804 peppermint-welcome-dbgsym_20.12.01_amd64.deb
+ 1730a5f68408373ec65cb97d62ef1d209b6c73de 304300 peppermint-welcome_20.12.01_amd64.deb
 Checksums-Sha256:
- 5cfa024bea20878c6ff5b60ebd6b25a5e9ece25da765dc6a9a061d92cea3b6d5 600 peppermint-welcome_20.11.01.dsc
- 4fc152c087f23f0fd451950daf9c9e69c9ccc053aa2c024f2feb8f987ebd6f42 8832 peppermint-welcome-dbgsym_20.11.01_amd64.deb
- 22907cfefecabca2bb67c1f220f925f6c5302178c267060c70d681cbdfab4da1 304352 peppermint-welcome_20.11.01_amd64.deb
+ d31aaa8f1a4dd9517c1ba27c76a95ea10cc7b94d31a85a45980b6b1b9e283896 600 peppermint-welcome_20.12.01.dsc
+ f9116519c4498c064a529c1c2fa35cc48420a2a660365f815ec7dec701c9dd48 8804 peppermint-welcome-dbgsym_20.12.01_amd64.deb
+ 74f221c4641fbe7196530e708b9fe5510a8a0d01b60ef388e822ab14587ba8a5 304300 peppermint-welcome_20.12.01_amd64.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Tue, 03 Nov 2020 20:44:24 -0500
+Build-Date: Fri, 11 Dec 2020 23:17:11 -0500
 Build-Tainted-By:
  merged-usr-via-symlinks
  usr-local-has-libraries
@@ -27,7 +27,7 @@ Installed-Build-Depends:
  automake (= 1:1.16.1-4),
  autopoint (= 0.19.8.1-9),
  autotools-dev (= 20180224.1),
- base-files (= 10.3+deb10u6),
+ base-files (= 10.3+deb10u7),
  base-passwd (= 3.5.46),
  bash (= 5.0-4),
  binutils (= 2.31.1-16),
@@ -140,7 +140,7 @@ Installed-Build-Depends:
  libudev1 (= 1:241-7~deb10u4+mx19),
  libunistring2 (= 0.9.10-1),
  libuuid1 (= 2.33.1-0.1),
- libxml2 (= 2.9.4+dfsg1-7+b3),
+ libxml2 (= 2.9.4+dfsg1-7+deb10u1),
  linux-libc-dev (= 5.8.14-1~mx19+2),
  login (= 1:4.5-1.1),
  m4 (= 1.4.18-2),
@@ -165,4 +165,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1604454162"
+ SOURCE_DATE_EPOCH="1607746552"
